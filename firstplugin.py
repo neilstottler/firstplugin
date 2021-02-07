@@ -7,7 +7,7 @@ from commands.typed import TypedSayCommand, TypedClientCommand
 
 
 # Extra amount of health every player should get on spawn
-#test
+
 EXTRA_HP = 25
 
 def load():
