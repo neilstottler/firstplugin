@@ -4,11 +4,8 @@ from players.helpers import index_from_userid
 from messages import SayText2
 from filters.players import PlayerIter
 from commands.typed import TypedSayCommand, TypedClientCommand
+from colors import ORANGE, WHITE
 
-
-# Extra amount of health every player should get on spawn
-
-EXTRA_HP = 25
 
 def load():
     SayText2('Plugin has been loaded successfully!').send()
@@ -22,4 +19,4 @@ def unload():
 @TypedSayCommand("!test")
 @TypedClientCommand("sp_test")
 def something(command_info):
-    SayText2("testing 123 with admin permissions").send()
+    SayText2(f"{ORANGE}testing {WHITE}123 with admin permissions").send()
